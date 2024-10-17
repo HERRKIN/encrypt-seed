@@ -1,38 +1,74 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  list-style-type: none;
+  margin: 0 5px;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+li a {
+  text-decoration: none;
   color: white;
+  font-size: large;
+  font-weight: bold;
+}
+li a:hover {
+  color: lightblue
 }
 
-.App-link {
-  color: #61dafb;
+label{
+  padding:15px;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #fff;
+  border-radius: 5px;
+  border-bottom: 1px solid black;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(115, 115, 118);
 }
+label.selected{
+  color:black;
+  background-color: lightblue;  
+  border-bottom: 1px solid black;
+  box-shadow: 0 0 5px 5px lightblue;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+input[type="radio"]{
+  display: none;
+}
+button {
+  border-radius: 5px;
+  padding: 15px;
+  margin: 5px;
+  background-color: #002;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: large;
+
+}
+.seed{
+  display: flex;
+  font-size: large;
+  font-weight: bold;
+  padding: 40px;
+  background-color: gray;
+  color: white;
+  border-radius: 5px;
+  max-width: 500px;
+  margin:40px auto;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  text-align: justify;
+}
+.seed p {
+  text-align: center;
+}
+textarea{
+  min-width: 50%;
+  padding:20px;
+  field-size: content;
 }
